@@ -1,0 +1,77 @@
+1. Before doing any other investigation, list two or three questions that this infographic
+and explanation of methodology raise in your mind.
+
+Why is chicken noodle only popular in two states?
+
+Why are milkshakes so popular in the south?
+
+2. Where can you find Google Trends search data? Provide the URL.
+
+https://trends.google.com/trends/
+
+
+3. The article concluded that “milkshakes take the crown as the ultimate breakup food,
+topping the list in six states.” Pull up Google Trends data on Milkshake (beverage) and
+change the date range to February 1, 2024 through February 28, 2025.
+
+a) What is the highest peak recorded in the line chart for “Interest over time”?
+
+In July 2024, milkshakes interest over time peaked
+
+b) What is the lowest dip recorded?
+
+The lowest peak occurred in between November 30 - December 30 2024, dropping to 72 
+
+Year Up United Data Analyst Training Academy Week 1 Lab Workbook
+
+Page 8 of 55
+
+4. At the top next to the box for “Milkshake,” there is a plus sign to add another search
+term. Click the plus sign to add a search for Hamburger (Food).
+a) What is the highest peak recorded for searches using Hamburger? 
+The highest recorded peak occurred between April 30 - may 31 2024
+
+What is the
+lowest dip?
+
+The lowest dip occurred between November 30 - December 31 2024
+b) What happened to the line for Milkshake?
+ What do the high and low look like now?
+
+The Milkshake trends flatlined with a slight dip between September 30 - October 31 2024 and peaking in July 2024
+
+5. Why did the line for Milkshake change? Hint: Click on the icon next to “Interest
+over time” for more information about how trend results are displayed.
+
+More people searched for hamburgers during this time than milkshakes which leads to the disparity.
+
+6. Add a third term to your search, this time for Breakup (Topic).
+
+a) Do you see any patterns that suggest a relationship between searches for Breakup
+and Hamburger?
+
+When Breakups dipped hamburgers dipped.
+When Breakups increased hamburgers dipped.
+
+b) How about between Breakup and Milkshake?
+
+When Breakups dipped milkshakes purchases increased.
+When milkshakes increased Breakups dipped.
+
+7. What does all of this suggest about the reliability of the conclusions reached in the
+article?
+
+Based on the trend lines, there is no correlation between breakups and cuisine. Unfortunately it is just a coincidence.
+ 
+8. At the upper right of Google Trends, click on the link for “Back to Classic Explore.”
+Notice that this view includes a section for “Compared breakdown by subregion.”
+
+a) What was the top state by interest for Milkshake?
+
+The top state by interest for Milkshakes is North Carolina.
+
+b) What was the top state by interest for Hamburger?
+The top state by interest for Hamburgers is South Dakota
+
+9. Use the download icon to download a csv file with these search trend results. Save it
+to your DataAnalytics/week-01 folder as GTrends_milkshake_hamburger_2024.csv
