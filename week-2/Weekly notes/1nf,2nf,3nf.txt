@@ -1,0 +1,15 @@
+1nf : single atomic value in row 
+
+2nf : no partial dependency : all columns have to be linked to the composite keys(two primary keys) or primary care
+If a column is linked to one composite key but not the other this breaks 2nf
+
+ex. studentid(pk), coursed(pk), studentname
+note- two pk(primary keys) makes a composite key
+
+student name only relates to the studentid not courseid which breaks 2nf because a column must depend on the entire composite key not just a part of it
+
+
+3nf: no transient dependency: a column can not be linked to another column only the primary key 
+
+ex. student id(pk), studentname, courseid, coursename.
+coursename is linked to courseid not student id which is a transient dependency. Breaks 3nf 
