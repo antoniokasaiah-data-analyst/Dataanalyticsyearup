@@ -100,7 +100,45 @@ SELECT LASTNAME,firstname
 FROM employees
 WHERE region IS NOT NULL;
 
--- example 21
+-- example 21 -- like function
 SELECT companyname 
 FROM customers
 WHERE CompanyName LIKE 'A%'; -- PERCENTAGE SEARCHES MANY UNDERSCORE SEARCHERS ONE.
+
+-- EXMAPLE 25 -- date filter
+SELECT orderid,customerid,orderdate 
+FROM orders
+WHERE shippeddate = '1997-01-01';
+
+-- EXAMPLE 26 -- year and month function
+SELECT orderid, orderdate
+FROM orders
+WHERE YEAR(orderdate) =1997
+AND MONTH(orderdate) = 6; -- date column goes in the parenthesis 
+
+-- EXAMPLE 27 --asc/dsc order
+SELECT productname,unitprice
+FROM products
+ORDER BY productname DESC, unitprice ;
+
+-- EXAMPLE 28
+SELECT customerid,city,country
+FROM customers
+ORDER BY country asc;
+
+-- EXAMPLE 29 -- LIMIT AND OFFSET
+SELECT productname,unitprice
+FROM products
+ORDER BY unitprice DESC
+LIMIT 5;
+
+-- EXAMPLE 30
+SELECT productname,unitprice
+FROM products
+ORDER BY UNITPRICE 
+LIMIT 5,5;
+
+-- EXAMPLE 36 -- Artithmatic 
+SELECT productname, unitprice AS 'Original Price', unitprice -(unitprice *.10)   AS '10% Discount Price'
+FROM products
+ORDER BY productNAME ASC;
