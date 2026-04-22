@@ -1,0 +1,69 @@
+USE northwind;
+
+/* 1. Create a single query to list the product id, product name, unit price and category 
+name of all products. Order by category name and within that, by product name. */
+
+SELECT * 
+FROM products;
+
+SELECT * 
+FROM categories;
+
+SELECT t1.productname,t1.productid,t1.unitprice,categoryname
+FROM products AS t1
+JOIN categories AS t2
+ON t1.categoryid = t2.categoryid;
+
+
+
+/* 2. Create a single query to list the product id, product name, unit price and supplier 
+name of all products that cost more than $75. Order by product name. */
+
+SELECT * 
+FROM products;
+
+SELECT * 
+FROM suppliers;
+
+SELECT t1.productid,t1.productname,t1.unitprice,companyname AS Suppliername
+FROM products AS t1
+JOIN suppliers AS t2
+ON t1.supplierid = t2.supplierid
+WHERE unitprice > 75
+ORDER BY productname;
+
+/* 3. Create a single query to list the product id, product name, unit price, category name, 
+and supplier name of every product. Order by product name. */
+
+SELECT * 
+FROM products;
+
+SELECT * 
+FROM suppliers;
+
+SELECT * 
+FROM categories;
+
+SELECT t1.productid,t1.productname,t1.unitprice,t2.companyname AS suppliername,t3.CategoryName
+FROM products AS t1
+JOIN suppliers AS t2
+ON t1.SupplierID = t2.SupplierID
+JOIN categories AS t3
+ON t1.CategoryID = t3.CategoryID
+ORDER BY productname;
+
+4. Create a single query to list the order id, ship name, ship address, and shipping 
+company name of every order that shipped to Germany. Assign the shipping company 
+name the alias ‘Shipper.’ Order by the name of the shipper, then the name of who it 
+shipped to.
+5. Start from the same query as above (#4), but omit OrderID and add logic to group by 
+ship name, with a count of how many orders were shipped for that ship name.
+6. Create a single query to list the order id, order date, ship name, ship address of all 
+orders that included Sasquatch Ale.
+∗ Hint: You will need to join on three tables to accomplish this. (One of these tables 
+has a sneaky space in the name, so you will need to surround it with backticks, like 
+this: `table name`)
+7. Save your changes to 2A_using_joins.sql and use Git Bash to add, commit, and push 
+to DataAnalytics/week-03. */
+
+
