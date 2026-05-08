@@ -1,0 +1,22 @@
+# question 1
+states = ('florida','washington','virginia','texas','vermont')
+
+print(f'There are {len(states)} states in this tuple')
+
+print(f'{states[0]} is the first state in the tuple and {states[4]} is the last state in the tuple')
+
+print(f'It is {'texas'in states} that texas is in the states tuple')
+
+print(sorted(states))
+
+my_set = {1,2,3,4,5}
+
+my_list = list(my_set)
+print(my_list[2])
+
+my_list = sorted(my_set)
+print(my_list[3])
+
+my_set = {1,2,3,4,5}
+a,b,c,d,e = my_set
+print(a,b,c,d,e)
