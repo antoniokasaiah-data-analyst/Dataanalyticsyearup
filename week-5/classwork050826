@@ -1,0 +1,5 @@
+states = {'NY','FL','TX','CA','VA'}
+
+print(f"total number of states: {len(states)}")
+
+print(f" Is texas in the set ? {'TX' in states}")
